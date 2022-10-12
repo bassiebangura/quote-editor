@@ -33,6 +33,9 @@ gem "cssbundling-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# simple_form is a Rails library for generating forms [https://github.com/heartcombo/simple_form]
+gem "simple_form"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
