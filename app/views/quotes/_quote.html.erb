@@ -1,0 +1,7 @@
+<div>
+    <%= link_to quote.name, quote_path(quote) %>
+    <div>
+        <%= button_to "Delete", quote_path(quote), method: :delete, data: { confirm: "Are you sure?" } %>
+        <%= link_to "Edit", edit_quote_path(quote) %>
+    </div>
+</div>

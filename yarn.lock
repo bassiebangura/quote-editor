@@ -114,7 +114,7 @@ esbuild-windows-arm64@0.15.10:
 
 esbuild@^0.15.10:
   version "0.15.10"
-  resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.15.10.tgz"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.15.10.tgz#85c2f8446e9b1fe04fae68daceacba033eedbd42"
   integrity sha512-N7wBhfJ/E5fzn/SpNgX+oW2RLRjwaL8Y0ezqNqhjD6w0H2p0rDuEz2FKZqpqLnO8DCaWumKe8dsC/ljvVSSxng==
   optionalDependencies:
     "@esbuild/android-arm" "0.15.10"
