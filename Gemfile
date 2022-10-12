@@ -7,16 +7,13 @@ ruby "3.1.2"
 gem "rails", "~> 7.0.4"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
-# gem "sprockets-rails"
+gem "sprockets-rails"
 
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
-
-# new asset pipeline
-gem "propshaft"
 
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
 gem "jsbundling-rails"
@@ -33,14 +30,12 @@ gem "cssbundling-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
-# simple_form is a Rails library for generating forms [https://github.com/heartcombo/simple_form]
-gem "simple_form"
-
 # Use Redis adapter to run Action Cable in production
-# gem "redis", "~> 4.0"
+gem "redis", "~> 4.0"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
+
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
@@ -50,6 +45,12 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
+
+# Forms made easy for Rails
+gem "simple_form", "~> 5.1.0"
+
+# Authentication made easy for Rails
+gem "devise", "~> 4.8.1"
 
 # Use Sass to process CSS
 # gem "sassc-rails"

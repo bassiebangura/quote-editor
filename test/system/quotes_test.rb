@@ -19,13 +19,13 @@ class QuotesTest < ApplicationSystemTestCase
 
     # When I fill in the name input with "Test Quote"
     # and I click on the "Create Quote" button
-    fill_in "Name", with: "Test Quote"
+    fill_in "Name", with: "Capybara Quote"
     click_on "Create Quote"
 
     # we expect to be back on the page with the title "Quotes"
     # and to see our "Test Quote" in the list of quotes
     assert_selector "h1", text: "Quotes"
-    assert_text "Test Quote"
+    assert_text "Capybara Quote"
   end
 
   test "Showing a quote" do
@@ -55,4 +55,5 @@ class QuotesTest < ApplicationSystemTestCase
 
     click_on "Delete", match: :first
     assert_no_text @quote.name
+  end
 end
