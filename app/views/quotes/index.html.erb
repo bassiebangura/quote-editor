@@ -3,6 +3,6 @@
         <h1>Quotes</h1>
         <%= link_to "New Quote", new_quote_path, class: "btn btn-primary", data: {"turbo-frame": "new_quote"} %>
     </div>
-    <turbo-frame id="new_quote"></turbo-frame>
+    <%= turbo_frame_tag id="new_quote" do %><% end %>
     <%= render @quotes %>
 </main>
