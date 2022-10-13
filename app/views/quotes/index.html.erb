@@ -1,8 +1,8 @@
 <main class="container">
     <div class="header">
         <h1>Quotes</h1>
-        <%= link_to "New Quote", new_quote_path, class: "btn btn-primary"%>
+        <%= link_to "New Quote", new_quote_path, class: "btn btn-primary", data: {"turbo-frame": "new_quote"} %>
     </div>
-
+    <turbo-frame id="new_quote"></turbo-frame>
     <%= render @quotes %>
 </main>

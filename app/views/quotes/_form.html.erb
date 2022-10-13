@@ -1,10 +1,13 @@
-<%= simple_form_for quote, html: { class: "form"} do |f| %>
+<%= simple_form_for quote, html: { class: "form", data: {"turbo-action": "advance"}} do |f| %>
     <% if quote.errors.any? %>
         <div>
             <%= quote.errors.full_messages.to_sentence.capitalize %>
         </div>
     <% end %>
-
-    <%= f.input :name, input_html: { autofocus: true } %>
-    <%= f.submit %>
+    
+    <div class="form__field">
+        <%= f.label :name %>
+        <%= f.input :name, input_html: { autofocus: true } %>
+        <%= f.submit %>
+    </div>
 <% end %>
